@@ -1,0 +1,13 @@
+.col {
+  border-style: solid;
+  border-radius: 2;
+  background-color: white;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1638215274200-1b8d88e72ec7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTE5ODM1Njc&ixlib=rb-1.2.1&q=85");
+  
+  background-color: white;
+   background-size: 100%; 
+
+}
+
