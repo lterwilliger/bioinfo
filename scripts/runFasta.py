@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
 # ### The purpose of this notebook is to composite several bioinformatics techniques and tools into one place. 
@@ -18,6 +18,17 @@
 # Version: 1.3
 # Last update: 05/08/22
 # ###
+print('''<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bioinformatics</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="styles/style.css" rel="stylesheet">
+   </head>
+   <body>''')
 from IPython import get_ipython
 import os
 import pandas as pd
@@ -28,8 +39,7 @@ import os
 import shutil
 
 gene = input("Enter the gene of interest EX: PSEN2: ")
-
-mutationSwap = input("Enter mutation swaps (original amino acid Position New amino Acid) \n[EX T380M,T380W,T350M ]: ")
+mutationSwap = input("Enter mutation swaps (original amino acid Position New amino Acid) \n[EpsenX T380M,T380W,T350M ]: ")
 mutationSwap = mutationSwap.upper()
 
 # get_ipython().system('pip install chembl_webresource_client')
@@ -53,7 +63,10 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 3000)
 pd.set_option('display.colheader_justify', 'center')
 pd.set_option('display.precision', 3)
+print("<p>")
 print(targets[['cross_references','organism','pref_name','target_chembl_id']])
+print("</p>")
+
 
 
 # pick table id number from far left column and insert below
@@ -164,9 +177,13 @@ for x in range(0,listLen):
                 if count2==int(str_of_ints):
                     if aminoWild == listChar[i]:
                         listChar[i]=aminoMutant 
+                        print("<p>")
                         print("Swapped HERE")
+                        print("</p>")
                     else:
+                        print("<p>")
                         print("NO SWAP, incorrect starting amino acid. File: " + selected_target+"_"+listMutations[x]+fasta)
+                        print("</p>")
                 file2.write(listChar[i])
                 if (i+1) % 60 == 0:
                     file2.write("\n")
@@ -190,5 +207,11 @@ for x in range(0,listLen):
     string_ints = [str(int) for int in numbers]
     str_of_ints = "". join(string_ints)
     list.append(selected_target + " "+str_of_ints +" "+ aminoWild + " "+aminoMutant)
+    print("<p>")
     print(selected_target + " "+str_of_ints +" "+ aminoWild + " "+aminoMutant)
+    print("</p>")
 
+print('''</body>
+   </html>
+   
+   ''')
