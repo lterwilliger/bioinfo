@@ -10,4 +10,9 @@ body{
    background-size: 100%; 
 
 }
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
 
