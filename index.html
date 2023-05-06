@@ -1,153 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bioinformatics</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Use only one version of Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Nav bar  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <head>
+      <title>Bioinformatics</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="styles/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Nav bar  -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bioinformatics Link Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="form.html">FASTA generator</a>
+                 </li> -->
+                 <li class="nav-item">
+                  <a class="nav-link" href="about.html">About the Creator</a>
+               </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <br>
+      <h2>&nbsp;&nbsp;<a href="https://drive.google.com/drive/folders/1kpPXcgqNvOfBFj_tf27kijAfRwUvWzh9" target="_blank"> Google Drive Slow Homology / MDS</a></h2>
+      <!-- start of outside container -->
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bioinformatics Link Hub</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About the Creator</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <br>
-    <h2>&nbsp;&nbsp;<a href="https://drive.google.com/drive/folders/1kpPXcgqNvOfBFj_tf27kijAfRwUvWzh9" target="_blank">Google Drive Slow Homology / MDS</a></h2>
-    <!-- Start of main content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Finding a Genetic Disease, Gene or Variant</h2>
-          <hr>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Genetic Disease
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>A genetic disorder is a disease caused by a change in the DNA sequence away from the normal sequence. Genetic disorders can be caused by a mutation in one gene, by mutations in multiple genes, by a combination of gene mutations and environmental factors, or by damage to chromosomes.</p>
-                  <ul>
-                    <li>Find a list of the most common genetic diseases in this <a href="PDFs/Table_of_Genetic_Disorders.pdf" target="_blank">PDF</a>.</li>
-                    <li>Search for information about over 5200 rare and genetic diseases at <a href="https://rarediseases.info.nih.gov/diseases" target="_blank">NIH GARD</a>.</li>
+      <div class="col col-md-5">
+      
+      
+         <h2> Finding a...</h2>  
+      
+           <hr> 
+           <div class="row">
+           <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse5">Genetic Disease:</a>
+                  </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">A genetic disorder is a disease caused by a change in the DNA sequence away from the normal sequence. Genetic disorders can be caused by a mutation in one gene, by mutations in multiple genes, by a combination of gene mutations and environmental factors, or by damage to chromosomes. </li>
+                    <li class="list-group-item"> Most common <a href="PDFs/Table_of_Genetic_Disorders.pdf" target="_blank"> genetic diseases pdf</a>.</li>
+                    <li class="list-group-item"> Over 5200 different rare/genetic diseases at <a href="https://rarediseases.info.nih.gov/diseases" target="_blank">NIH GARD</a>.</li>
                   </ul>
                 </div>
               </div>
             </div>
-            
-   <hr>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseGene" aria-expanded="true" aria-controls="collapseGene">
-                Gene
-              </button>
-            </h5>
-          </div>
-
-          <div id="collapseGene" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              <p class="card-text">A gene is the basic physical and functional unit of heredity. Genes are made up of DNA. Some genes act as instructions to make molecules called proteins. However, many genes do not code for proteins.</p>
-              <p class="card-text">Find a gene associated with disease at <a href="https://simple-clinvar.broadinstitute.org/" target="_blank">Simple Clinvar</a>.</p>
             </div>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseVariant" aria-expanded="false" aria-controls="collapseVariant">
-                Variant
-              </button>
-            </h5>
-          </div>
-          <div id="collapseVariant" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              <p class="card-text">A genetic alteration in which a single base pair substitution alters the genetic code in a way that produces an amino acid that is different from the usual amino acid at that position. Some missense variants (or mutations) will alter the function of the protein. Also called missense mutation.</p>
-              <p class="card-text">Find a variant in a gene at <a href="https://simple-clinvar.broadinstitute.org/" target="_blank">Simple Clinvar</a>.</p>
-              <p class="card-text">Learn how variants are classified through <a href="PDFs/ACMG_Guidlines.pdf" target="_blank">ACMG Guidelines</a>.</p>
+          <hr>
+          <div class="row">
+          <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse6">Gene:</a>
+                  </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning"> A gene is the basic physical and functional unit of heredity. Genes are made up of DNA. Some genes act as instructions to make molecules called proteins. However, many genes do not code for proteins. </li>
+                    <li class="list-group-item"> Find a gene associated with disease at <a href="https://simple-clinvar.broadinstitute.org/" target="_blank"> Simple Clinvar</a>.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseLinux" aria-expanded="false" aria-controls="collapseLinux">
-                Reference to Linux
-              </button>
-            </h5>
           </div>
-          <div id="collapseLinux" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              <p class="card-text">Linux is an operating system that almost everyone who deals with data uses. Instead of using Windows or MacOS, Linux can be used to manage files, manipulate data, and send data to an environment like R for analysis.</p>
-              <p class="card-text">Access a guide that applies Linux commands to biology <a href="PDFs/linux_for_bioinformatics.pdf" target="_blank">here</a>.</p>
+          <hr>
+
+          <div class="row">
+          <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse7">Variant:</a>
+                  </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">A genetic alteration in which a single base pair substitution alters the genetic code in a way that produces an amino acid that is different from the usual amino acid at that position. Some missense variants (or mutations) will alter the function of the protein. Also called missense mutation.</li>
+                    <li class="list-group-item"> Find a variant in a gene at<a href="https://simple-clinvar.broadinstitute.org/" target="_blank"> Simple Clinvar</a>.</li>
+                    <li class="list-group-item"> How variants are classified is through <a href="PDFs/ACMG_Guidlines.pdf" target="_blank"> ACMG Guidelines</a>.</li>
+
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+         </div>
+         <hr>
+         <div class="row">
+          <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse8">Reference to Linux:</a>
+                  </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">Linux is an operating system that almost everyone who deals with data uses. Instead of using Windows or MacOS, Linux can be used to manage files, manipulate data, and send data to an environment like R for analysis. </li>
+                    <li class="list-group-item"> A guide that applies linux commands to biology can be accessed <a href="PDFs/linux_for_bioinformatics.pdf" target="_blank"> here</a>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+       <br>
+          
+         </div>
 
-  
-         <section class="container">
-  <section class="row">
-    <section class="col-md-5 offset-md-1">
-      <h2>Running a Homology Model</h2>
-      <hr>
-      <article class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse1">YASARA Modeling</a>
-          </h3>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse">
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-warning">Homology modeling is a computational method to predict protein 3D structure from its amino acid sequence.</li>
-            <li class="list-group-item">Download models from <a href="https://www.uniprot.org/" target="_blank">UniProt</a>.</li>
-            <li class="list-group-item">Trouble running models in YASARA? Try <a href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/" target="_blank">I-TASSER</a>.</li>
-            <li class="list-group-item">Run a homology model for your gene with these <a href="PDFs/Homology-Modeling-with-YASARA_compressed-1.pdf" target="_blank">instructions</a>.</li>
-            <li class="list-group-item">Swap amino acids in YASARA with these <a href="PDFs/Changing-Amino-Acids-of-a-Protein-Protocol.pdf" target="_blank">instructions</a>.</li>
-          </ul>
-        </div>
-      </article>
-      <hr>
-      <article class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2">Mutation Assessment</a>
-          </h3>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-          <ul class="list-group">
-            <li class="list-group-item list-group-item-warning">Identifying disease-causing SNVs requires functional studies. Several computational methods have been developed to prioritize the most likely pathogenic SNVs.</li>
-            <li class="list-group-item">Check the possible impact of an amino acid substitution on the structure and function at <a href="http://genetics.bwh.harvard.edu/pph2/" target="_blank">PolyPhen-2</a>.</li>
-            <li class="list-group-item">Other prediction tools: <a href="http://mutationassessor.org/r3/" target="_blank">Mutation Assessor</a>, <a href="http://mutpred.mutdb.org/#qform" target="_blank">MutPred</a>, and <a href="https://snps.biofold.org/snps-and-go/snps-and-go" target="_blank"> </li>
-             <li class="list-group-item">A summary of the  <a href="imgs/summaryChartPredictionTools.png" target="_blank"> prediction tools table</a>.</li>
-                 </ul>
-        </div>
-      </article>
-      <hr>
+         <div class="col col-md-5 offset-1">
+           <h2> Running a... </h2>
+           <hr> 
+           <div class="row">
+           <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">YASARA Modeling:</a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning"> Homology modeling is one of the computational structure prediction methods that are used to determine protein 3D structure from its amino acid sequence. It is considered to be the most accurate of the computational structure prediction methods.</li>
+                    <li class="list-group-item">Download model from <a href="https://www.uniprot.org/" target="_blank" > Uniprot</a>. </li>
+                    <li class="list-group-item">Model trouble in Yasara? Try <a href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/" target="_blank" >I-TASSER</a>.</li>
+                    <li class="list-group-item">Running a homology model for your gene with <a href="PDFs/Homology-Modeling-with-YASARA_compressed-1.pdf" target="_blank" > homology instructions</a>. </li>
+                    <li class="list-group-item">Swapping amino acids in Yasara with <a href="PDFs/Changing-Amino-Acids-of-a-Protein-Protocol.pdf" target="_blank" >swap instructions</a>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+          <div class="container">
+            <div class="panel-group">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse2">Mutation Assessment:</a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">Identifying rare disease-causing SNVs remains challenging, and often requires functional in vitro studies. Prioritizing the most likely pathogenic SNVs is of utmost importance, and several computational methods have been developed for this purpose. </li>
+                    <li class="list-group-item">PolyPhen-2 is the possible impact of an amino acid substitution on the structure and function<a href="http://genetics.bwh.harvard.edu/pph2/" target="_blank" > at PolyPhen-2</a>. </li>
+                    <li class="list-group-item"> Other prediction tools: <a href="http://mutationassessor.org/r3/" target="_blank">Mutation Assessor</a>, <a href="http://mutpred.mutdb.org/#qform" target="_blank">MutPred</a>, and <a href="https://snps.biofold.org/snps-and-go/snps-and-go.html" target="_blank">SNPs&GO</a></li>
+                    <li class="list-group-item"> Ranking of prediction tools by<a href="PDFs/Human Mutation - 2011 - Thusberg - Performance of mutation pathogenicity prediction methods on missense variants.pdf" target="_blank"> a 2011 study</a>.</li>
+                    <li class="list-group-item">A summary of the  <a href="imgs/summaryChartPredictionTools.png" target="_blank"> prediction tools table</a>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <hr>
 
           <div class="row">
           <div class="container">
